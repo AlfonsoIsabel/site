@@ -1,0 +1,151 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+#app-images img {
+  max-width: 200px; /* Ajusta el valor a tu gusto */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen en su columna */
+}
+/* SIDEBAR NEGRO BRILLANTE */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background: #000; /* Negro brillante */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+}
+.sidebar .img-container img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* Imagen redonda */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.sidebar h2 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+/* HEADER NEGRO BRILLANTE */
+header {
+  background-color: #000; /* Negro brillante */
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+header h1 {
+  font-size: 3rem; /* Aumentado el tamaño del nombre */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+header div span {
+  font-size: 1.2rem;
+}
+
+/* SECCIONES */
+section {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+section h2 {
+  margin-bottom: 15px;
+  color: #000; /* Títulos en negro */
+  text-transform: uppercase;
+}
+section img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* CARDS */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.card-footer a {
+  color: #000; /* Enlaces en negro */
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-footer a:hover {
+  color: #444;
+}
+
+/* Botón negro 3D con hover */
+.btn-custon {
+  background-color: #000;   /* Negro brillante */
+  color: #fff;
+  border: 1px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* Sombra que crea la ilusión de 3D */
+  box-shadow: 0 5px #333;
+  transition: all 0.3s ease;
+}
+
+.btn-custon:hover {
+  background-color: #333;   /* Un poco más claro en hover */
+  box-shadow: 0 3px #111;   /* Sube un poco la sombra */
+  transform: translateY(2px); /* Simula que el botón baja */
+}
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #000; /* Negro brillante */
+  color: #fff;
+}
+
+/* RESPONSIVIDAD: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
